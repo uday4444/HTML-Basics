@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apply For Jobs</title>
+        <h1>Apply For Jobs</h1>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            body{
+                background-image: url("bg5.jpeg") ;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1{
+                text-align: center;
+                color:sienna;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+        <form action="as.html" method="post">
+            
+             <div class = "form-group">
+
+                 
+             
+                 <label for="fn" id="fname"><b>First Name :</b></label>
+                <input type="text" name="fname" id="fn" class="form-control" required></input>
+
+            </div>
+            <div class = "form-group">
+             
+                <label  for="ln" id="lname"><b>Last Name :</b></label>
+                <input type="text" name="lname" id="ln" class="form-control" required></input>
+            
+            </div>
+            
+            <div class = "form-group">
+
+                <label  for="em" id="eml"><b>Email :</b></label>
+                <input type="email" name="email" id="em" class="form-control" required></input>
+
+            </div>
+
+
+            <div class = "form-group">
+
+                 <label  for="mobn" id="mno"><b>Mobile No :</b></label>
+                 <input type="number" name="mno" id="mobn" class="form-control" required></input>
+                
+            </div>
+
+            <div class = "form-group">
+
+                <label for = "add" id = "addrs"><b>Address </b></label>
+                <input type ="text" name = "address" id = "add" class="form-control" required></input>
+            
+            </div>
+            <div class = "form-group">
+                <label  for="ct" id="c"><b>City :</b></label>
+                <input type="text" name="city" id="ct" class="form-control" required></input>
+            </div>
+
+            <div class = "form-group">
+                 <label  for="st" id="s"><b>State :</b></label>
+                <input type="text" name="state" id="st" class="form-control" required></input>
+            </div>
+
+            <div class = "form-group">
+                 <label  for="zc" id="ln"><b>Zip Code :</b></label>
+                <input type="number" name="zipcode" id="zc" class="form-control" required></input>
+            </div>
+
+            <div class = "form-group">
+
+                <label for = "country" id = "c1"><b>Country :</b></label>
+                <select name = "country"  class="form-control" required>
+                <option>Select</option>
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>JAPAN</option>
+                <option>CHINA</option>
+                <option>RUSSIA</option></select><br>
+            </div>
+            
+            
+            <div class = "form-group">
+
+                <label for = "el" id = "el1"><b>Education Level :</b></label>
+                <select name = "education" required>
+                <option>Select</option>
+                <option>Master's Degree</option>
+                <option>Bachelor's Degree</option>
+                <option>Associate Degree</option></select>
+            </div>
+
+
+
+            <div class = "form-group">
+
+
+                <label for = "et" id = "et1"><b>Education Type :</b></label>
+                <select name = "educationtype" required>
+                <option>Select</option>
+                <option>Mtech</option>
+                <option>BTech/MCA</option>
+                <option>MBA</option></select>
+            </div>
+
+
+
+            <div class = "form-group">
+
+                 <label for = "res" id = "res1"><b>Resume :</b></label>
+                 <input id="data_10" name="data_10"  type="file" class="form-control" required></input>
+            </div>
+
+
+            <div class = "form-group">
+    
+                <label  for="cl" id="cl1" ><b>Cover Letter :</b></label>
+                <input type="text" name="coverletter" id="cl" ></input>
+            </div>
+
+
+
+            <div class = "form-group">
+
+
+                 <label><b>Are you Employed? :</b></label>
+                 <input type="radio" name="ok" value="yes" id = "C" onclick="op();">YES</input>
+                 <input type="radio" name = "ok" value = "no" id = "S" onclick= "op();">NO</input>
+                 <div id = "first" style = "display: none;">
+                        <label  for="ce" id="cue"><b>Current working organisation  :</b></label>
+                        <input type="text" name="currentemployer" id="cue"></input><br/>
+
+                         <label  for="yoe" id="yearof"><b>Years of Experience :</b></label>
+                         <input type="text" name="experience" id="yearof" ></input><br/>
+
+                
+                
+                    
+             
+
+
+                <div class = "form-group">
+                    <label for="jobs"><b>Jobs you want to apply:</b></label>
+                    <select name="jobs" id="jobs" multiple>
+                        <option value="csa">Computer System Analyst</option>
+                        <option value="ita">IT Analyst</option>
+                        <option value="itc">IT Cordinator</option>
+                        <option value="na">Network Administrator</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </div>
+
+            <script type="text/javascript"> 
+                function op(){
+                 if(document.getElementById("C").checked){
+                        document.getElementById("first").style.display = 'block';
+                        /*document.getElementById("second").style.display = 'none';*/
+                    }
+                else {
+                document.getElementById("first").style.display = 'none';
+                /*document.getElementById("second").style.display = 'block';*/
+                 }
+                }
+            </script>
+
+        </form>
+    </div>
+    </body>
+</html>

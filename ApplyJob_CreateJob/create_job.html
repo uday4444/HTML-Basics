@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enter Job Data</title>
+    <link rel="stylesheet" type="text/css" href="job.css">
+
+    <h1>Create Job</h1>
+    <script>
+        function validate() {
+            var x = document.getElementById("d").value;
+            var inpDate = new Date(x);
+            var CurrentDate = new Date();
+
+            if (inpDate.setHours(0, 0, 0, 0) > CurrentDate.setHours(0, 0, 0, 0)) {
+                alert("Please Enter the date Below Today");
+                /* returnToPreviousPage();*/
+                return false;
+            }
+
+
+        }
+
+    </script>
+</head>
+
+
+    <body>
+        <div class="block">
+        <table>
+            <form name="myform" action="cs.html" onsubmit="return validate()" method="post">
+
+
+
+                <tr>
+                    <td>
+                        <label for="title" id="t1"> Job Title :</label>
+                    </td>
+                    <td>
+                        <select name="title" name="jt" required>
+                            <option>Select one</option>
+                            <option>Programmer Analyst Trainee</option>
+                            <option>Technical Lead</option>
+                            <option>Software Engineer</option>
+                            <option>Project Manager</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="department" id="d1">Department :</label>
+                    </td>
+                    <td>
+                        <select name="department" required></input>
+                            <option></option>
+                            <option>CSE</option>
+                            <option>ECE</option>
+                            <option>EEE</option>
+                            <option>CIVIL</option>
+                            <option>MECH</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="country" id="c1">Country :</label>
+                    </td>
+                    <td>
+
+                        <select name="country" required></input>
+                            <option></option>
+                            <option>INDIA</option>
+                            <option>USA</option>
+                            <option>JAPAN</option>
+                            <option>CHINA</option>
+                            <option>RUSSIA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="description" id="d1">Description :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="description" id="des1" required></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="date">Date : </label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" id="d"></input>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                <td>
+                    <button type="submit" value="submit" onclick="validate();">Submit</button>
+                </td>
+                        
+            </tr>        
+                       
+                
+                
+
+        </table>
+       
+
+        
+
+
+
+        </form>
+
+
+    </body>
+</div>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <body>
+            <label>Are you Employed? :</label>
+            <input type="radio" name="ok" value="yes" id = "C" onclick="op();">YES</input>
+            <input type="radio" name = "ok" value = "no" id = "S" onclick= "op()">NO</input>
+            
+            
+
+            <div id = "first" style = "display: none;">
+
+                <p>YES1</p>
+            </div>
+
+
+            <div id = "second" style = "display: none;">
+
+                <p>NO1</p>
+            </div>
+            
+
+            
+
+
+
+
+            <script type="text/javascript"> 
+                function op(){
+                 if(document.getElementById("C").checked){
+                        document.getElementById("first").style.display = 'block';
+                        document.getElementById("second").style.display = 'none';
+                    }
+                else {
+                document.getElementById("first").style.display = 'none';
+                document.getElementById("second").style.display = 'block';
+                 }
+                }
+            </script>
+        </body>
+    </head>
+</html>
